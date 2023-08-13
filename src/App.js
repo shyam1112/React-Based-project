@@ -7,6 +7,7 @@ import Student from './Student';
 import GetInput from './GetInput';
 import Form from './Form';
 import FormValidation from './FormValidation';
+import Mount from './Mount';
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
       {/* <Form /> */}
       <br/><br/>
       <FormValidation />
+      <Mount />
     </div>
   );
 }
