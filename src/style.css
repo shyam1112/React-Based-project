@@ -1,4 +1,6 @@
 .usestyle{
-    color:aqua;
-    background-color: blue;
+    color:rgb(93, 123, 233);
+    background-color: rgb(195, 229, 26);
+    inline-size: 16ch;
+    margin-left:10em;
 }

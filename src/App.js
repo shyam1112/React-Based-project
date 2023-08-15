@@ -11,6 +11,8 @@ import FormValidation from './FormValidation';
 import Mount from './Mount';
 import UseEffect from './UseEffect';
 import style from './custom.module.css'
+import Navbarr from './Navbarr';
+import Heading from './Heading';
 
 function App() {
 
@@ -25,7 +27,9 @@ function App() {
       {/* <br/><br/>
       <FormValidation />
       <Mount /> */}
-      <UseEffect />
+      {/* <UseEffect />*/}
+      <Heading/>
+      <Navbarr />
       <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
       <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>
       <h1 className={style.success}>Hello raju..! Style 3</h1>
