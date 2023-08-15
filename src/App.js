@@ -1,5 +1,6 @@
 import { click } from '@testing-library/user-event/dist/click';
 import './App.css';
+import './style.css'
 import User from './User';
 import UserClass from './UserClass';
 import { useState } from 'react';
@@ -9,6 +10,7 @@ import Form from './Form';
 import FormValidation from './FormValidation';
 import Mount from './Mount';
 import UseEffect from './UseEffect';
+import style from './custom.module.css'
 
 function App() {
 
@@ -24,6 +26,9 @@ function App() {
       <FormValidation />
       <Mount /> */}
       <UseEffect />
+      <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
+      <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>
+      <h1 className={style.success}>Hello raju..! Style 3</h1>
 
     </div>
   );
