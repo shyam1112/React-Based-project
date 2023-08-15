@@ -8,6 +8,7 @@ import GetInput from './GetInput';
 import Form from './Form';
 import FormValidation from './FormValidation';
 import Mount from './Mount';
+import UseEffect from './UseEffect';
 
 function App() {
 
@@ -15,13 +16,15 @@ function App() {
     <div className="App">
       {/* <h1>{data}</h1> */}
       {/* <button onClick={updatedata}>Click me </button> */}
-      <UserClass />
+      {/* <UserClass /> */}
       {/* <Student name={data} email="raju@gmail.com" other={{num:"9583266562" ,address:"akdjnkajdfv"}}/> */}
-      <GetInput />
+      {/* <GetInput /> */}
       {/* <Form /> */}
-      <br/><br/>
+      {/* <br/><br/>
       <FormValidation />
-      <Mount />
+      <Mount /> */}
+      <UseEffect />
+
     </div>
   );
 }
