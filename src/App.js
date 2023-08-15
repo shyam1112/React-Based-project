@@ -28,7 +28,7 @@ function App() {
       <FormValidation />
       <Mount /> */}
       {/* <UseEffect />*/}
-      <Heading/>
+      <Heading />
       <Navbarr />
       <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
       <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>

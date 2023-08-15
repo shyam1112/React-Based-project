@@ -3,10 +3,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Heading() {
-  return (
-    <Container fluid="md">
+    return (
+      
+      <Container>
       <Row>
-        <Col>Royal Perfume & Novelty</Col>
+        <Col style={{backgroundColor:'black',color:'white'}}>Royal Perfume & Novelty</Col>
       </Row>
     </Container>
   );
