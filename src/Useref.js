@@ -1,5 +1,5 @@
 import { useRef } from "react";
-
+import UforwardRef from "./UforwardRef";
 
 function Useref(){
 
@@ -7,11 +7,13 @@ function Useref(){
     function Handle(){
         inputRef.current.focus();
         inputRef.current.style.color='red';
-        inputRef.current.style.display="none"
+        // inputRef.current.style.display="none"
     }
     return(
         <div>
-            <input type="text" ref={inputRef}/>
+            <h1>Using ForwardedRef</h1>
+            {/* <input type="text" ref={inputRef}/> */}
+            <UforwardRef ref={inputRef}/>
             <button onClick={Handle}>Click to Handle </button>
         </div>
 
