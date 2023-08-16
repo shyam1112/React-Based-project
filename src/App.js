@@ -15,6 +15,7 @@ import Navbarr from './Navbarr';
 import Heading from './Heading';
 import Array from './Array';
 import Usememo from './Usememo';
+import Useref from './Useref';
 
 function App() {
 
@@ -35,9 +36,10 @@ function App() {
       {/* <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
       <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>
       <h1 className={style.success}>Hello raju..! Style 3</h1> */}
-
-      {/* <Array /> */}
-      <Usememo />
+{/* 
+      <Array />
+      <Usememo /> */}
+      <Useref />
     </div>
   );
 }
