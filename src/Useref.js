@@ -12,7 +12,7 @@ function Useref(){
     return(
         <div>
             <input type="text" ref={inputRef}/>
-            <button onClick={Handle}>Click to Handle</button>
+            <button onClick={Handle}>Click to Handle </button>
         </div>
 
     )
