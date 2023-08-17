@@ -18,6 +18,7 @@ import Usememo from './Usememo';
 import Useref from './Useref';
 import ControllCom from './ControllCom';
 import UncontrollComp from './UncontrollComp';
+import HOCcom from './HOCcom';
 function App() {
 
   return (
@@ -42,7 +43,8 @@ function App() {
       <Usememo /> */}
       {/* <Useref /> */}
       {/* <ControllCom /> */}
-      <UncontrollComp />
+      {/* <UncontrollComp /> */}
+      <HOCcom />
     </div>
   );
 }
