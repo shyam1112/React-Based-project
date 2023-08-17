@@ -16,7 +16,8 @@ import Heading from './Heading';
 import Array from './Array';
 import Usememo from './Usememo';
 import Useref from './Useref';
-
+import ControllCom from './ControllCom';
+import UncontrollComp from './UncontrollComp';
 function App() {
 
   return (
@@ -39,7 +40,9 @@ function App() {
 {/* 
       <Array />
       <Usememo /> */}
-      <Useref />
+      {/* <Useref /> */}
+      {/* <ControllCom /> */}
+      <UncontrollComp />
     </div>
   );
 }
