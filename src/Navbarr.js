@@ -8,6 +8,7 @@ function Navbarr() {
           <Link to="/" className="active">Home</Link>
           <Link to="/About">About</Link>
           <Link to="/User">User</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         
     </div>

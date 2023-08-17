@@ -18,8 +18,9 @@ import Useref from './Useref';
 import ControllCom from './ControllCom';
 import UncontrollComp from './UncontrollComp';
 import HOCcom from './HOCcom';
-import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import {BrowserRouter,Routes,Route, Navigate} from 'react-router-dom';
 import About from './About';
+import Home from './Home';
 function App() {
 
   return (
@@ -51,9 +52,11 @@ function App() {
       <BrowserRouter>
       <Navbarr />
         <Routes>
-          <Route path='/' />
+          <Route path='/' element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/User" element={<User />} />
+          {/* <Route path="/*" element={<h1>404 Not Found..</h1>} /> */}
+          <Route path='/*' element={<Navigate to='/'/>} />
         </Routes>
       </BrowserRouter>
     </div>
