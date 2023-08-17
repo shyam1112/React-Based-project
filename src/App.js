@@ -34,7 +34,7 @@ function App() {
       <FormValidation />
       <Mount /> */}
       {/* <UseEffect />*/}
-      <Navbarr />
+    
       {/* <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
       <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>
       <h1 className={style.success}>Hello raju..! Style 3</h1> */}
@@ -49,9 +49,11 @@ function App() {
 
       {/******************Browser Router *************** */}
       <BrowserRouter>
+      <Navbarr />
         <Routes>
-          <Route path='/' element={<User />} />
+          <Route path='/' />
           <Route path="/about" element={<About />} />
+          <Route path="/User" element={<User />} />
         </Routes>
       </BrowserRouter>
     </div>
