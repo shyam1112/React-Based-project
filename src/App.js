@@ -19,6 +19,8 @@ import Useref from './Useref';
 import ControllCom from './ControllCom';
 import UncontrollComp from './UncontrollComp';
 import HOCcom from './HOCcom';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import About from './About';
 function App() {
 
   return (
@@ -38,16 +40,24 @@ function App() {
       {/* <h1 style={{color:'red',backgroundColor:'gold'}}>Hello raju..! Style 1</h1><br/>
       <h1 className='usestyle'>Hello raju..! Style 2</h1><br/>
       <h1 className={style.success}>Hello raju..! Style 3</h1> */}
-{/* 
+      {/* 
       <Array />
       <Usememo /> */}
       {/* <Useref /> */}
       {/* <ControllCom /> */}
       {/* <UncontrollComp /> */}
-      <HOCcom />
+      {/* <HOCcom /> */}
+
+
+      {/******************Browser Router *************** */}
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<User />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
- 
