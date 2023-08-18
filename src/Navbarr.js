@@ -15,7 +15,6 @@ function BasicExample() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="about">About</Nav.Link>
             <Nav.Link href="user/ab">AB</Nav.Link>
-
           </Nav>
         </Navbar.Collapse>
       </Container>
