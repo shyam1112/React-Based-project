@@ -16,11 +16,11 @@ import Array from './Array';
 import Usememo from './Usememo';
 import Useref from './Useref';
 import ControllCom from './ControllCom';
-import UncontrollComp from './UncontrollComp';
 import HOCcom from './HOCcom';
 import {BrowserRouter,Routes,Route, Navigate, Link} from 'react-router-dom';
 import About from './About';
 import Home from './Home';
+import UsesearchHook from './UsesearchHook';
 function App() {
 
   return (
@@ -55,12 +55,12 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/User/:name" element={<User />} />
+          <Route path="/usesearch" element={<UsesearchHook />} />
           {/* <Route path="/*" element={<h1>404 Not Found..</h1>} /> */}
           <Route path='/*' element={<Navigate to='/'/>} />
-          <Route path='./usesearchparam.js' element={<usesearchparam />}/>
+          
         </Routes>
       </BrowserRouter>
-      <h2><Link to='./usesearchparam.js'>usesearchparam : </Link></h2>
     </div>
   );
 }
