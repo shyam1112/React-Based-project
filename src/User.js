@@ -1,7 +1,9 @@
+import { useParams } from "react-router-dom";
 function User(){
+    const {name}=useParams(null);
     return <div>
-        <h1>Hello</h1>
-        <h2>This is user file functional component.</h2>
+            <h1> {name} User page..</h1>
+
     </div>
 }
 
