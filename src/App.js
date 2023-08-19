@@ -21,6 +21,9 @@ import {BrowserRouter,Routes,Route, Navigate, Link} from 'react-router-dom';
 import About from './About';
 import Home from './Home';
 import UsesearchHook from './UsesearchHook';
+import Uselocation from './Uselocation';
+import Login from './Login';
+import Protect from './Protect';
 function App() {
 
   return (
@@ -52,13 +55,14 @@ function App() {
       <BrowserRouter>
       <Navbarr />
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/User/:name" element={<User />} />
+          <Route path='/' element={<Protect Component={Home}/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path="/about" element={<Protect Component={About}/>} />
+          <Route path="/User/:name" element={<Protect Component={User}/>} />
           <Route path="/usesearch" element={<UsesearchHook />} />
           {/* <Route path="/*" element={<h1>404 Not Found..</h1>} /> */}
           <Route path='/*' element={<Navigate to='/'/>} />
-          
+          <Route path='/uselocation' element={<Uselocation/>}/>
         </Routes>
       </BrowserRouter>
     </div>

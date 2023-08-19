@@ -1,6 +1,8 @@
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams,useLocation} from "react-router-dom";
 function UsesearchHook(){
     const [searchparam,setSearchparam]=useSearchParams();
+    const location=useLocation();
+    console.log(location);
     const age=searchparam.get('age');
     const city=searchparam.get('text');
     return(
