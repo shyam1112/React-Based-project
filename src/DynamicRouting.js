@@ -12,8 +12,8 @@ function DynamicRouting(){
     ]
     return(
         <div>
-            <h2>This is DynamicRouting</h2>
- 
+            <h2>This is DynamicRouting</h2>  
+  
             {
                 users.map((i)=>
                     <h2><Link to={'/user/'+i.id} >{i.name}</Link></h2>
