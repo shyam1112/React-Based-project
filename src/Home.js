@@ -6,6 +6,7 @@ function Home(){
             <h2><Link to='/usesearch'>usesearchparam</Link></h2>
             <br/>
             <h2><Link to={'/uselocation'}>Uselocation</Link></h2>
+            <h3><Link to={'./dynamic'}>DynamicRouting</Link></h3>
         </div>
     )
 }

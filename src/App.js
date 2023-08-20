@@ -24,6 +24,7 @@ import UsesearchHook from './UsesearchHook';
 import Uselocation from './Uselocation';
 import Login from './Login';
 import Protect from './Protect';
+import DynamicRouting from './DynamicRouting';
 function App() {
 
   return (
@@ -58,12 +59,14 @@ function App() {
           <Route path='/' element={<Protect Component={Home}/>} />
           <Route path='/login' element={<Login/>} />
           <Route path="/about" element={<Protect Component={About}/>} />
-          <Route path="/User/:name" element={<Protect Component={User}/>} />
+          <Route path="/User/:id" element={<Protect Component={User}/>} />
           <Route path="/usesearch" element={<UsesearchHook />} />
           {/* <Route path="/*" element={<h1>404 Not Found..</h1>} /> */}
           <Route path='/*' element={<Navigate to='/'/>} />
           <Route path='/uselocation' element={<Uselocation/>}/>
+          <Route path='/dynamic' element={<DynamicRouting/>} />
         </Routes>
+        
       </BrowserRouter>
     </div>
   );
