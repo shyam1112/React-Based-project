@@ -23,4 +23,4 @@ function DynamicRouting(){
         </div>
     )
 }
-export default DynamicRouting;
+export  default DynamicRouting;
