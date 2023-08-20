@@ -10,7 +10,7 @@ function DynamicRouting(){
         {id:'5',name:'E',contact:'2232'},
 
     ]
-    return(
+     return(
         <div>
             <h2>This is DynamicRouting</h2>  
   
